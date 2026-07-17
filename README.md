@@ -110,11 +110,14 @@ event-booking-system
 
 ###  Phase 1: Project Setup
  Project Setup|Initialize Spring Boot Project| Configure MySQL Database| 
- Create Project Structure|Configure Maven Dependencies | Test Database Connection
+ Created Project Structure|Configure Maven Dependencies | Tested Database Connection
+
+ ###  Phase 2: DataBase Design
+  Design Event ,Booking,User Entities |Created Entity Relationships| Generate Database Tables
 
 ---
 
-## 📖 API Documentation
+##  API Documentation
 
 API documentation will be added as development progresses.
 
