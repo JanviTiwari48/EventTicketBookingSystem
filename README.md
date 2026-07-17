@@ -71,6 +71,32 @@ This project is being built incrementally with regular feature additions and Git
 
 ---
 
+##  Database
+
+### Main Tables
+
+- User
+- Event
+- Booking
+- Payment
+
+---
+
+##  Development Milestones
+
+###  Phase 1: Project Setup
+ Project Setup|Initialized Spring Boot Project| Configured MySQL Database| 
+ Created Project Structure|Configured Maven Dependencies | Tested Database Connection
+
+ ###  Phase 2: DataBase Design
+  Design Event ,Booking,User Entities |Created Entity Relationships| Generate Database Tables
+
+ ###  Phase 3: CRUD API'S Integration
+ #### Phase 3.1
+ Started with the User module.Built the full layer stack: Repository → Service → Controller.
+
+ ---
+
 ## 📂 Project Structure
 
 ```text
@@ -93,37 +119,6 @@ event-booking-system
 └── pom.xml
 ```
 
----
-
-##  Database
-
-### Main Tables
-
-- User
-- Event
-- Booking
-- Payment
-
----
-
-##  Development Milestones
-
-###  Phase 1: Project Setup
- Project Setup|Initialize Spring Boot Project| Configure MySQL Database| 
- Created Project Structure|Configure Maven Dependencies | Tested Database Connection
-
- ###  Phase 2: DataBase Design
-  Design Event ,Booking,User Entities |Created Entity Relationships| Generate Database Tables
-
- ###  Phase 3: CRUD API'S Integration
- #### Phase 3.1
- Started with the User module.Built the full layer stack: Repository → Service → Controller.
-
----
-
-##  API Documentation
-
-API documentation will be added as development progresses.
 
 
 
