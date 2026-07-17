@@ -115,6 +115,10 @@ event-booking-system
  ###  Phase 2: DataBase Design
   Design Event ,Booking,User Entities |Created Entity Relationships| Generate Database Tables
 
+ ###  Phase 3: CRUD API'S Integration
+ #### Phase 3.1
+ Started with the User module.Built the full layer stack: Repository → Service → Controller.
+
 ---
 
 ##  API Documentation
