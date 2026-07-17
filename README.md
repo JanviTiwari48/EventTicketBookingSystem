@@ -120,13 +120,6 @@ API documentation will be added as development progresses.
 
 
 
-1. Clone the repository.
-2. Open the project in IntelliJ IDEA.
-3. Configure MySQL credentials in `application.properties`.
-4. Run the Spring Boot application.
-5. Test APIs using Postman.
-
----
 
 
 
