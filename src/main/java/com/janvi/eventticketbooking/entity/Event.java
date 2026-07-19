@@ -32,7 +32,7 @@ public class Event {
 
     private double price;
 
-    private int totalSeats;
+    private Integer totalSeats;
 
-    private int availableSeats;
+    private Integer availableSeats;
 }
