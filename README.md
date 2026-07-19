@@ -94,6 +94,8 @@ This project is being built incrementally with regular feature additions and Git
  ###  Phase 3: CRUD API'S Integration
  #### Phase 3.1
  Started with the User module.Built the full layer stack: Repository → Service → Controller.
+  #### Phase 3.2
+  Integrated Events module and also tested API's using Postman
 
  ---
 
