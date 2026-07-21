@@ -4,6 +4,7 @@ package com.janvi.eventticketbooking.controller;
 import com.janvi.eventticketbooking.dto.BookingRequest;
 import com.janvi.eventticketbooking.entity.Booking;
 import com.janvi.eventticketbooking.service.BookingService;
+import jakarta.validation.Valid;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -20,7 +21,7 @@ public class BookingController {
     private final BookingService bookingService;
 
     @PostMapping
-   public ResponseEntity<Booking>createBooking(@RequestBody BookingRequest request){
+   public ResponseEntity<Booking>createBooking( @Valid  @RequestBody BookingRequest request){
         Booking created=bookingService.createBooking(request);
         return new ResponseEntity<>(created, HttpStatus.CREATED);
 
