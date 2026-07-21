@@ -96,6 +96,9 @@ This project is being built incrementally with regular feature additions and Git
  Started with the User module.Built the full layer stack: Repository → Service → Controller.
   #### Phase 3.2
   Integrated Events module and also tested API's using Postman
+  #### Phase 3.3
+ Integrated Bookings module and also tested API's using Postman
+ Booking is different from User/Event — the request needs to reference an existing User and Event by their IDs, not create new ones. So we fetch the actual User and Event from the database first, using their repositories, then attach them to the Booking.
 
  ---
 
