@@ -100,6 +100,12 @@ This project is being built incrementally with regular feature additions and Git
  Integrated Bookings module and also tested API's using Postman
  Booking is different from User/Event — the request needs to reference an existing User and Event by their IDs, not create new ones. So we fetch the actual User and Event from the database first, using their repositories, then attach them to the Booking.
 
+###  Phase 4: Validation
+Right now nothing stops someone from POSTing an empty name, an invalid email, or totalSeats: -5. Bean Validation (jakarta.validation) fixes that by adding annotations directly on entity fields, then a single @Valid in the controller triggers the checks automatically.
+Annotations like @NotBlank, @Email, @Min go on entity fields.
+@Valid goes in the controller method parameter (@Valid @RequestBody User user).
+
+
  ---
 
 ## 📂 Project Structure
