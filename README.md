@@ -105,6 +105,8 @@ Right now nothing stops someone from POSTing an empty name, an invalid email, or
 Annotations like @NotBlank, @Email, @Min go on entity fields.
 @Valid goes in the controller method parameter (@Valid @RequestBody User user).
 
+###  Phase 5: Global Exception Handling
+ Added custom exceptions (`ResourceNotFoundException`, `BookingException`) | Replaced generic RuntimeExceptions with custom exceptions | Implemented Global Exception Handler using `@RestControllerAdvice`
 
  ---
 
