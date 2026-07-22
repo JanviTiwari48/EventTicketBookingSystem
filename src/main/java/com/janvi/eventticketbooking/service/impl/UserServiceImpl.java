@@ -1,6 +1,7 @@
 package com.janvi.eventticketbooking.service.impl;
 
 import com.janvi.eventticketbooking.entity.User;
+import com.janvi.eventticketbooking.exception.ResourceNotFoundException;
 import com.janvi.eventticketbooking.repository.UserRepository;
 import com.janvi.eventticketbooking.service.UserService;
 import lombok.RequiredArgsConstructor;
@@ -29,7 +30,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public User getUserById(Long id) {
         return userRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("User not found with id: " + id));
+                .orElseThrow(() -> new ResourceNotFoundException("User not found with id: " + id));
     }
     @Override
     public User updateUser(Long id, User updatedUser) {

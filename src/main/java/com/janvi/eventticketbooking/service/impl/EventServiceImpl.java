@@ -2,6 +2,7 @@ package com.janvi.eventticketbooking.service.impl;
 
 
 import com.janvi.eventticketbooking.entity.Event;
+import com.janvi.eventticketbooking.exception.ResourceNotFoundException;
 import com.janvi.eventticketbooking.repository.EventRepository;
 import com.janvi.eventticketbooking.service.EventService;
 import lombok.RequiredArgsConstructor;
@@ -30,7 +31,7 @@ public class EventServiceImpl implements EventService {
     @Override
     public Event getEventById(Long id) {
         return eventRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Event not found with id: " + id));
+                .orElseThrow(() -> new ResourceNotFoundException("Event not found with id: " + id));
     }
     @Override
     public Event updateEvent(Long id, Event updatedEvent) {

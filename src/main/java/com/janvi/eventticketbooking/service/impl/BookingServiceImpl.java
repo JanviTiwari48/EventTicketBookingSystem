@@ -6,6 +6,7 @@ import com.janvi.eventticketbooking.entity.Booking;
 import com.janvi.eventticketbooking.entity.BookingStatus;
 import com.janvi.eventticketbooking.entity.Event;
 import com.janvi.eventticketbooking.entity.User;
+import com.janvi.eventticketbooking.exception.ResourceNotFoundException;
 import com.janvi.eventticketbooking.repository.BookingRepository;
 import com.janvi.eventticketbooking.repository.EventRepository;
 import com.janvi.eventticketbooking.repository.UserRepository;
@@ -25,10 +26,10 @@ public class BookingServiceImpl implements BookingService{
 
     public Booking createBooking(BookingRequest request){
         User user=userRepository.findById(request.getUserId())
-                .orElseThrow(()->new RuntimeException("User not found with id: "+ request.getUserId()));
+                .orElseThrow(()->new ResourceNotFoundException("User not found with id: "+ request.getUserId()));
 
         Event event = eventRepository.findById(request.getEventId())
-                .orElseThrow(() -> new RuntimeException("Event not found with id: " + request.getEventId()));
+                .orElseThrow(() -> new ResourceNotFoundException("Event not found with id: " + request.getEventId()));
 
         Booking booking = Booking.builder()
                 .user(user)
